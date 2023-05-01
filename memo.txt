@@ -1,0 +1,43 @@
+Python
+
+1.variable (변수) 정의 
+my age <- 띄어쓰기, 이런식으로 하면 안됨.
+
+일반적으로 lowercase, snakecase 사용
+=>
+my_age
+
+2. booleans & String 
+일반적으로 아는거랑 동일,
+my_name = "tang"
+my_name = True , (맨앞 upperCase 해줘야되는거 유의)
+
+3. function 정의
+python에서 공백은 매우 중요하다.
+def, if, for, class, 등을 작성 하고나면 다음 코드라인에는 반드시 들여쓰기를 해야함.
+그리고 일반적인 {} 코드블록 대신, : 로 써줌
+
+ex )
+def say_hello():
+    print("Hi!")
+say_hello()
+
+
+4. parameters
+일반적으로 아는거랑 동일,
+
+user_name = "Tang"
+def say_hello(user_name):
+    print(user_name, "Hi! how are you?")
+
+
+4-1.
+# default parameters
+user_name2에 들어와야할 argument가 들어오지 않는다면 에러를 뱉어내는게 일반적이지만,
+default parameter를 다음과 같이 설정하면 다음과 같은 결과를 볼 수 있다.
+
+def say_hello2(user_name2="익명"):
+    print(user_name2, "Hi ㅎㅎ! how are you?"   )
+say_hello2()
+
+//result : 익명 Hi ㅎㅎ! how are you? 
